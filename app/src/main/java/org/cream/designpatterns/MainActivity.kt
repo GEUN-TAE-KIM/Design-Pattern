@@ -19,14 +19,15 @@ class MainActivity : AppCompatActivity() {
         Log.d("TEST" , "singleton1: $singleton1")
         Log.d("TEST" , "singleton2: $singleton2")
 
-
-        val companionsingleton1 = companionSingleton.getInstance(this)
-        val companionsingleton2 = companionSingleton.getInstance(this)
+        val companionsingleton1 = CompanionSingleton.getInstance(this)
+        val companionsingleton2 = CompanionSingleton.getInstance(this)
 
         Log.d("TEST" , "companionsingleton1: $companionsingleton1")
         Log.d("TEST" , "companionsingleton2: $companionsingleton2")
+
+
         companionsingleton1.printMsg("컴페니언 싱글톤 호출")
-        companionSingleton.getInstance(this).printMsg("컴페니언 싱글톤 호출")
+        CompanionSingleton.getInstance(this).printMsg("컴페니언 싱글톤 호출")
 
     }
 }
