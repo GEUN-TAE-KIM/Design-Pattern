@@ -7,13 +7,15 @@ fun main(){
 
     println("이름 : ${myphone.galaxy}")
     println("이름 : ${myphone2.galaxy}")
-
+    
+    // 싱글톤의 변수를 변경하는 것이기 때문에 다 바뀜
     myphone.galaxy = "아이폰"
 
     println("이름 : ${myphone.galaxy}")
     println("이름 : ${myphone2.galaxy}")
 
     println("============================")
+    println("일반적인 변경")
 
     var iphone = "아이폰"
     var iphone2 = "아이폰"
@@ -25,13 +27,5 @@ fun main(){
 
     println("이름 : $iphone")
     println("이름 : $iphone2")
-
-}
-
-class MobilePhone(osName: String, brand: String, model: String){
-
-    init {
-        println("나의 폰 기종은 $model 이며 브랜드는 $brand 사용한다 os는 $osName 입니다.")
-    }
 
 }
