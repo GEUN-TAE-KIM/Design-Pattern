@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         Log.d("TEST" , "companionsingleton1: $companionsingleton1")
         Log.d("TEST" , "companionsingleton2: $companionsingleton2")
 
-
         companionsingleton1.printMsg("컴페니언 싱글톤 호출")
         CompanionSingleton.getInstance(this).printMsg("컴페니언 싱글톤 호출")
 
