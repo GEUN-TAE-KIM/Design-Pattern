@@ -1,5 +1,7 @@
 package org.cream.designpatterns
 
+import org.cream.designpatterns.singleton.MyexamplesSingleton
+
 fun main(){
 
     val myphone = MyexamplesSingleton

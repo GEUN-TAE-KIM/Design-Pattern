@@ -3,6 +3,8 @@ package org.cream.designpatterns
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import org.cream.designpatterns.singleton.CompanionSingleton
+import org.cream.designpatterns.singleton.Singleton
 
 class MainActivity : AppCompatActivity() {
 
