@@ -1,4 +1,4 @@
-package org.cream.designpatterns
+package org.cream.designpatterns.singleton
 
 import android.content.Context
 import android.util.Log
