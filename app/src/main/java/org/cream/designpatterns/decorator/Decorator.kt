@@ -13,9 +13,26 @@ class Development : Service {
 }
 
 //데코레이터
-class Decorator : Service {
+/*class Decorator : Service {
     lateinit var service: Service
 
     override fun runSomething(): String
             = "디자인 + " + service.runSomething()
+}*/
+
+class Decorator(val service: Service) : Service by service {
+
+    override fun runSomething(): String {
+        println("디자인")
+        return service.runSomething()
+    }
+
+}
+
+class Repair(val decorator: Decorator) : Service by decorator {
+
+    override fun runSomething(): String {
+        println("수리")
+        return decorator.runSomething()
+    }
 }
