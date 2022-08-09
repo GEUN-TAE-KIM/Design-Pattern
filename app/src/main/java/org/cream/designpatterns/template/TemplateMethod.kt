@@ -21,9 +21,7 @@ abstract class Coffee {
     }
 
     // 확장 / 변경
-    open fun putExtra() {
-        return
-    }
+    abstract fun putExtra()
 }
 
 class IceAmericano : Coffee() {
